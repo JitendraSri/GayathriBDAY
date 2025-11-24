@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Gayathri! 🎉</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Page 1: Introduction -->
+        <section id="page1" class="page active">
+            <div class="content">
+                <div id="typewriter" class="message"></div>
+                <button class="btn" onclick="nextPage()">Continue <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <!-- Page 2: Are You Ready? -->
+        <section id="page2" class="page">
+            <div class="content">
+                <div class="message">
+                    <p>Before we move ahead…</p>
+                    <p>Take a deep breath…</p>
+                    <p>Because what you're about to see…</p>
+                    <p>Is made only for <span class="highlight">YOU…</span></p>
+                    <p class="pulse">🌟 ARE YOU READY FOR IT? 🌟</p>
+                </div>
+                <button class="btn" onclick="nextPage()">Yes, I'm ready</button>
+            </div>
+        </section>
+
+        <!-- Page 3: Hold Your Breath -->
+        <section id="page3" class="page">
+            <div class="content">
+                <div class="message fade-in">
+    <p>Since 2017, so many things changed…</p>
+    <p>But some bonds just stayed strong.</p>
+    <p>That’s why this page exists…</p>
+    <p class="highlight">Ready? Hold your breath…</p>
+    <p>The journey starts now.</p>
+</div>
+
+                <button class="btn" onclick="nextPage()">Show me the memories <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <!-- Page 4: Gallery of Memories -->
+        <section id="page4" class="page">
+            <div class="content">
+                <div class="gallery-container">
+                    <h2>From 2017… till today…</h2>
+                    <p class="message">Every moment with you was priceless.<br>
+                    These aren't just photos…<br>
+                    They are chapters of a story…<br>
+                    A story of yourss.....</p>
+                    
+                    <div class="slider">
+                        <div class="slide active">
+                            <img src="img01.jpg" alt="Memory 1">
+                        </div>
+                        <div class="slide">
+                            <img src="img02.jpg" alt="Memory 2">
+                        </div>
+                        <div class="slide">
+                            <img src="img03.jpg" alt="Memory 3">
+                        </div>
+                        <div class="slide">
+                            <img src="img04.jpg" alt="Memory 4">
+                        </div>
+                        <div class="slide">
+                            <img src="img05.jpg" alt="Memory 5">
+                        </div>
+                        <div class="slide">
+                            <img src="img06.jpg" alt="Memory 6">
+                        </div>
+                        <div class="slide">
+                            <img src="img07.jpg" alt="Memory 7">
+                        </div>
+                        <div class="slide">
+                            <img src="img08.jpg" alt="Memory 8">
+                        </div>
+                        <div class="slide">
+                            <img src="img09.jpg" alt="Memory 9">
+                        </div>
+                        <div class="slide">
+                            <img src="img10.jpg" alt="Memory 10">
+                        </div>
+                        <div class="slide">
+                            <img src="img11.jpg" alt="Memory 11">
+                        </div>
+                        <div class="slide">
+                            <img src="img12.jpg" alt="Memory 12">
+                        </div>
+                        <div class="slide">
+                            <img src="img13.jpg" alt="Memory 13">
+                        </div>
+                        <div class="slide">
+                            <img src="img14.jpg" alt="Memory 14">
+                        </div>
+                    </div>
+                    <div class="slider-nav">
+                        <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <button class="btn" onclick="nextPage()">Go to Wishes <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <!-- Page 5: Birthday Wishes -->
+        <section id="page5" class="page">
+            <div class="content">
+                <div class="confetti"></div>
+                <div class="message">
+    <h1 class="birthday-title">🎉 HAPPY BIRTHDAY GAYATHRI! 🎉</h1>
+    <p>You're more than just a friend…</p>
+    <p>You’re the person who made my school days memorable.</p>
+    <p>From 2017 till today — your friendship has always been special.</p>
+    <p>Thank you for listening, supporting, and staying real.</p>
+    <p>On your birthday, I wish you nothing but the best —</p>
+    <p>More smiles, less stress, and success in everything you do. 💛</p>
+    <p>Also… take care of your health, okay?</p>
+    <p>And remember — whatever happens, I am always there. 🤞</p>
+    <p>Gifts will fade… celebrations will end…</p>
+    <p>But our friendship will always stay. 😊</p>
+</div>
+
+                <button class="btn" onclick="nextPage()">One last message… <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <!-- Page 6: Final Page -->
+        <section id="page6" class="page">
+            <div class="content">
+                <div class="message fade-in">
+                    <p>Navvindhi chalu… inka vellipovachu 😄</p>
+                    <p>But remember…</p>
+                    <p>Some people come and go…</p>
+                    <p>But some friendships…</p>
+                    <p class="highlight">Stay Forever.</p>
+                    <p class="thank-you">Thank you for everything… 💛</p>
+                    <p class="highlight">Once again HAPPY BIRTHDAY! Gayathri! 🎂</p>
+                </div>
+                <button class="btn" onclick="restartJourney()">Restart Journey <i class="fas fa-redo"></i></button>
+            </div>
+        </section>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="birthday.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
